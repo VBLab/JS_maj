@@ -1,0 +1,24 @@
+<div id="app">
+    <h1> {{ autreMessage }}</h1>
+    <h2>Comment vous appelez vous ? </h2>
+    <label for="name">Prenom :</label>
+    <input id="name" type="text" v-model="nameValue" />
+
+    <div class="greeting">
+      Bonjour {{ nameValue }} comment allez-vous aujourd'hui ? 
+    </div>
+  
+  <div>
+      <button v-on:click="cacher">
+        Cliquez pour afficher
+      </button>
+      <p v-if="message"> :taco: Bienvenue sur notre site :taco:</p>
+    </div>
+  <hr/>
+  <input id="name" type="text"
+         v-bind:value="autreMessage"
+         v-on:input="console.log($event.target.value)" />
+  <button v-on:click="changerTitre" > Changer Headline</button>
+  <p> {{ nameValue }}</p>
+  
+</div>

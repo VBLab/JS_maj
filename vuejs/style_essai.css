@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: #431d1d;
+    color: #a08080;
+    text-align: center;
+    display: flex;
+    justify-content : center;
+  }
+  #nom{
+    margin: 10vh auto;
+  }
+  #color {
+    margin: 50px;
+  }
+  .chartreuse {
+    color : chartreuse;
+  }
+  #affiche {
+    margin: 50px;
+  }
+  

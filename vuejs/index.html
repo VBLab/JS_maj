@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Design forU</title>
+</head>
+<body>
+<div id="app">
+        <h2>choisi une couleur ? </h2>
+        <label for="couleur">Name:</label>
+        <input id="name" type="text" v-model="nameValue" />
+      
+      <div id ="app2">
+          Ha bon ? <div class="greeting"> {{ nameValue }} </div> tu aimes cette couleur ?</br> 
+          <input type="checkbox" v-model="success" >  OUI </br>
+          <input type="checkbox" v-model="success" >  NON </br>
+      </div>
+    <div id="app3">
+          <button @click="active = !active">appuie ici et ...</button>
+         <p :class="{ chartreuse: active }">change de couleurs</p>
+    </div>
+</div>
+        
+      
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
